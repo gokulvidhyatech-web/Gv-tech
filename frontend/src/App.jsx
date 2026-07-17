@@ -1,5 +1,22 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Login from "./pages/Login/Loginpage";
+import Dashboard from "./pages/Dashboard/Dashboard";
+
 function App() {
-  return <h1>Testing 123 - Gokulssss</h1>;
+  return (
+    <BrowserRouter>
+
+      <Routes>
+
+        <Route path="/" element={<Login />} />
+
+        <Route path="/dashboard" element={<Dashboard />} />
+
+      </Routes>
+
+    </BrowserRouter>
+  );
 }
 
 export default App;
