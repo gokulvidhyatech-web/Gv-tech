@@ -24,7 +24,7 @@ function Dashboard() {
 
             <h1>Dashboard</h1>
 
-            <h2>GVTech Data</h2>
+            <h2>GVTech Datas</h2>
 
             <table border="1" cellPadding="10">
 
