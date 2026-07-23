@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import login from "./pages/login/enterance";
-import dashboard from "./pages/dashboard/authenticate";
+import Login from "./pages/login/enterance";
+import Dashboard from "./pages/dashboard/authenticate";
 
 function App() {
   return (
@@ -9,9 +9,9 @@ function App() {
 
       <Routes>
 
-        <Route path="/" element={<login />} />
+        <Route path="/" element={<Login />} />
 
-        <Route path="/dashboard" element={<dashboard />} />
+        <Route path="/dashboard" element={<Dashboard />} />
 
       </Routes>
 
