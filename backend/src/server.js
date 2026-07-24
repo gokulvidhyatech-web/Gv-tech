@@ -11,27 +11,17 @@ app.use(express.json());
 app.get("/", (req, res) => {
     res.send("Backend Running");
 });
-/*
-app.get("/staffs", (req, res) => {
 
-    console.log("Route Hit");
+app.get("/employees",(req,res)=>{
 
-    pool.query("SELECT * FROM staffs", (err, result) => {
-
-        console.log("Query Completed");
-
-        if (err) {
-            console.error(err);
-            return res.status(500).json(err);
+    const sql = "select * from employees";
+    pool.query(sql,(err,result)=>{
+        if(err){
+            return res.status(500).json(err)
         }
-
-        console.log(result);
-
-        res.json(result);
-
-    });
-
-});*/
+           res.json(result);
+    })
+})
 app.post("/login", (req, res) => {
 
     const { username, password } = req.body;
