@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const pool = require("./config/db");
+const PORT = process.env.PORT || 5000;
 
 const app =express();
 app.use(cors());
@@ -28,6 +29,6 @@ app.get("/staffs", (req, res) => {
     });
 
 });
-app.listen(5000, () => {
-    console.log("Server Running on Port 5000");
+app.listen(PORT, () => {
+    console.log(`Server Running on Port ${PORT}`);
 });
