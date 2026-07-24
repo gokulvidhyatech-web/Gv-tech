@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Eye, EyeOff } from "lucide-react";
 import "./Log.css";
-import logo from "../../assets/Logo-photo.png";
+import logo from "../../assets/logogv.png";
 
 function Login() {
   const navigate = useNavigate();
