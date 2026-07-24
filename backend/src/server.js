@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-    res.send("Backend Version 2");
+    res.send("Backend Running");
 });
 
 app.get("/students",(req,res)=>{
