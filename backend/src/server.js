@@ -18,11 +18,12 @@ app.get("/students",(req,res)=>{
 });
 
 app.get("/staffs", (req, res) => {
-    console.log("Request received");
+
+    console.log("Route Hit");
 
     pool.query("SELECT * FROM staffs", (err, result) => {
 
-        console.log("Query finished");
+        console.log("Query Completed");
 
         if (err) {
             console.error(err);
@@ -32,7 +33,9 @@ app.get("/staffs", (req, res) => {
         console.log(result);
 
         res.json(result);
+
     });
+
 });
 
 
