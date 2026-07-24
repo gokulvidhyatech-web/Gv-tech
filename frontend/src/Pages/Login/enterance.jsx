@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Eye, EyeOff } from "lucide-react";
-import "./log.css";
+import "./Log.css";
 import logo from "../../assets/Logo-photo.png";
 
 function Login() {

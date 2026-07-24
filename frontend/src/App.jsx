@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Login from "./pages/login/enterance";
-import Dashboard from "./pages/dashboard/authenticate";
+import Login from "./pages/Login/Enterance";
+import Dashboard from "./pages/Dashboard/Authenticate";
 
 function App() {
   return (
