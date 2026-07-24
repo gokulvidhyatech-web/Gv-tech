@@ -18,17 +18,21 @@ app.get("/students",(req,res)=>{
 });
 
 app.get("/staffs", (req, res) => {
+    console.log("Request received");
 
     pool.query("SELECT * FROM staffs", (err, result) => {
 
+        console.log("Query finished");
+
         if (err) {
+            console.error(err);
             return res.status(500).json(err);
         }
 
+        console.log(result);
+
         res.json(result);
-
     });
-
 });
 
 
