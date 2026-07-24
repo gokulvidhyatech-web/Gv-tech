@@ -8,9 +8,8 @@ const app =express();
 app.use(cors());
 app.use(express.json());
 
-app.get("/",(req,res)=>{
-    res.send("Backend-running")
-
+app.get("/", (req, res) => {
+    res.send("Backend Version 2");
 });
 
 app.get("/students",(req,res)=>{
